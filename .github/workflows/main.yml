@@ -2,7 +2,7 @@
 
 name: Discord Notification
 # Make sure to change what triggers your action based on your needs
-on: [member, pull_request, pull_request_review, issue_comment, push]
+on: [milestone, create, delete, fork, issues, member, pull_request, pull_request_review, issue_comment, push]
 jobs:
   # ID of our job
   webhook-request:
