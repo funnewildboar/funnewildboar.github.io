@@ -19,7 +19,7 @@ jobs:
             "content": "",
             "embeds": [
               {
-                "title": "[`${{ steps.commit.outputs.short_sha }}`](https://github.com/${{ github.repository }}/commit/${{ github.sha }}) ${{ github.event.head_commit.message }}",
+                "title": "[${{ github.event.repository.name }}:${{ github.ref_name }}] New commits - ${{ github.event.head_commit.message }}",
                 "description": "`${{ steps.commit.outputs.short_sha }}` - ${{ github.actor }}",
                 "color": 14818627,
                 "author": {
